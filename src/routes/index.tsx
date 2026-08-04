@@ -1,7 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
 import {
   ArrowRight,
-  BookHeart,
   BookOpen,
   BriefcaseBusiness,
   Check,
@@ -16,7 +15,6 @@ import {
   Mail,
   MapPin,
   Menu,
-  Search,
   ShieldCheck,
   Sparkles,
   Store,
@@ -200,35 +198,18 @@ function HomePage() {
           <div className="section-inner work-grid">
             <div className="browser-wrap">
               <div className="browser-shadow" aria-hidden="true" />
-              <div className="browser-frame" role="img" aria-label="Stylized preview of the To Be Read bookstore website">
+              <div className="browser-frame" role="img" aria-label="Live screenshot of the To Be Read bookstore website">
                 <div className="browser-bar">
                   <span className="browser-dots" aria-hidden="true"><i /><i /><i /></span>
                   <span className="browser-url">tobereadshop.com</span>
                   <span className="browser-lock"><ShieldCheck size={13} /></span>
                 </div>
-                <div className="browser-page">
-                  <div className="mock-nav">
-                    <span className="mock-logo"><BookHeart size={20} /> TO BE READ</span>
-                    <span className="mock-links">SHOP &nbsp; VISIT &nbsp; EVENTS</span>
-                  </div>
-                  <div className="mock-hero">
-                    <div>
-                      <span className="mock-kicker">YOUR NEXT FAVORITE BOOK IS HERE</span>
-                      <strong>Stories worth<br />coming back to.</strong>
-                      <span className="mock-button">Find a book</span>
-                    </div>
-                    <div className="book-stack" aria-hidden="true">
-                      <span className="book book-one" />
-                      <span className="book book-two" />
-                      <span className="book book-three" />
-                      <span className="book book-four" />
-                      <span className="book-plant" />
-                    </div>
-                  </div>
-                  <div className="mock-footer-row">
-                    <span><Search size={14} /> AI book matchmaker</span>
-                    <span><MapPin size={14} /> Milwaukie, Oregon</span>
-                  </div>
+                <div className="browser-page browser-page-screenshot">
+                  <img
+                    src="/images/tobereadshop-hero.jpg"
+                    alt="To Be Read bookstore homepage showing the hero section and navigation"
+                    loading="lazy"
+                  />
                 </div>
               </div>
               <span className="work-caption">Built, maintained, and operated by 1Commerce LLC</span>

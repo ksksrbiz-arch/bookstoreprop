@@ -433,137 +433,17 @@ button:focus-visible {
   background: #f4ead7;
 }
 
-.mock-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: #233d31;
+.browser-page-screenshot {
+  padding: 0;
+  line-height: 0;
 }
 
-.mock-logo {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 9px;
-  font-weight: 900;
-  letter-spacing: 0.08em;
-}
-
-.mock-links {
-  font-size: 6px;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-}
-
-.mock-hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  min-height: 270px;
-  margin-top: 16px;
-  padding: 28px;
-  overflow: hidden;
-  background: #e7bf75;
-}
-
-.mock-hero > div:first-child {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.mock-kicker {
-  color: #74442f;
-  font-size: 6px;
-  font-weight: 900;
-  letter-spacing: 0.12em;
-}
-
-.mock-hero strong {
-  margin: 10px 0 17px;
-  color: #243d31;
-  font-size: clamp(19px, 3.1vw, 34px);
-  letter-spacing: -0.05em;
-  line-height: 1.05;
-}
-
-.mock-button {
-  padding: 7px 11px;
-  border-radius: 4px;
-  background: #294b3b;
-  color: white;
-  font-size: 7px;
-  font-weight: 800;
-}
-
-.book-stack {
-  position: relative;
-  min-height: 210px;
-}
-
-.book {
-  position: absolute;
-  left: 50%;
-  width: 118px;
-  height: 30px;
-  border-radius: 3px 7px 7px 3px;
-  box-shadow: inset 7px 0 rgba(255,255,255,0.2), 0 6px 12px rgba(75, 49, 25, 0.12);
-  transform: translateX(-50%);
-}
-
-.book::after {
-  position: absolute;
-  top: 5px;
-  right: 7px;
-  bottom: 5px;
-  width: 74%;
-  border-radius: 2px;
-  background: #f2e8d1;
-  content: "";
-}
-
-.book-one { bottom: 17px; background: #8c4937; transform: translateX(-52%) rotate(-4deg); }
-.book-two { bottom: 47px; background: #315445; transform: translateX(-42%) rotate(3deg); }
-.book-three { bottom: 77px; background: #d5834f; transform: translateX(-54%) rotate(-2deg); }
-.book-four { bottom: 107px; background: #596c87; transform: translateX(-43%) rotate(4deg); }
-
-.book-plant {
-  position: absolute;
-  right: 26px;
-  bottom: 135px;
-  width: 45px;
-  height: 60px;
-  border-bottom: 27px solid #a55236;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-}
-
-.book-plant::before,
-.book-plant::after {
-  position: absolute;
-  width: 29px;
-  height: 43px;
-  border-radius: 100% 0 100% 0;
-  background: #426a4d;
-  content: "";
-}
-
-.book-plant::before { top: -30px; left: -14px; transform: rotate(-25deg); }
-.book-plant::after { top: -24px; right: -15px; transform: scaleX(-1) rotate(-25deg); }
-
-.mock-footer-row {
-  display: flex;
-  justify-content: space-between;
-  padding: 14px 4px 0;
-  color: #4e4d45;
-  font-size: 7px;
-  font-weight: 700;
-}
-
-.mock-footer-row span {
-  display: flex;
-  align-items: center;
-  gap: 4px;
+.browser-page-screenshot img {
+  display: block;
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  object-position: top center;
 }
 
 .work-caption {
@@ -1409,17 +1289,8 @@ button:focus-visible {
     inset: 18px -14px -18px 18px;
   }
 
-  .mock-hero {
-    min-height: 220px;
-    padding: 20px;
-  }
-
-  .mock-hero strong {
-    font-size: 22px;
-  }
-
-  .book {
-    width: 90px;
+  .browser-page-screenshot img {
+    height: 260px;
   }
 
   .compact-list,
@@ -1492,18 +1363,8 @@ button:focus-visible {
 }
 
 @media (max-width: 440px) {
-  .mock-links,
-  .mock-footer-row span:last-child,
-  .book-plant {
-    display: none;
-  }
-
-  .mock-hero {
-    grid-template-columns: 1.12fr 0.88fr;
-  }
-
-  .browser-page {
-    padding: 11px;
+  .browser-page-screenshot img {
+    height: 200px;
   }
 
   .browser-url {
