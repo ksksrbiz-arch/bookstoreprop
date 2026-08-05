@@ -198,16 +198,28 @@ function HomePage() {
           <div className="section-inner work-grid">
             <div className="browser-wrap">
               <div className="browser-shadow" aria-hidden="true" />
-              <div className="browser-frame" role="img" aria-label="Live screenshot of the To Be Read bookstore website">
-                <div className="browser-bar">
-                  <span className="browser-dots" aria-hidden="true"><i /><i /><i /></span>
-                  <span className="browser-url">tobereadshop.com</span>
-                  <span className="browser-lock"><ShieldCheck size={13} /></span>
+              <div className="browser-stack">
+                <div className="browser-frame" role="img" aria-label="Live screenshot of the To Be Read bookstore website">
+                  <div className="browser-bar">
+                    <span className="browser-dots" aria-hidden="true"><i /><i /><i /></span>
+                    <span className="browser-url">tobereadshop.com</span>
+                    <span className="browser-lock"><ShieldCheck size={13} /></span>
+                  </div>
+                  <div className="browser-page browser-page-screenshot">
+                    <img
+                      src="/images/tobereadshop-hero.jpg"
+                      alt="To Be Read bookstore homepage showing the hero section and navigation"
+                      loading="lazy"
+                    />
+                  </div>
                 </div>
-                <div className="browser-page browser-page-screenshot">
+                <div className="mini-frame" role="img" aria-label="Store locator map on the To Be Read website showing address, hours, and directions">
+                  <div className="mini-frame-bar">
+                    <MapPin size={12} /> Store locator &amp; live hours
+                  </div>
                   <img
-                    src="/images/tobereadshop-hero.jpg"
-                    alt="To Be Read bookstore homepage showing the hero section and navigation"
+                    src="/images/tobereadshop-locator.jpg"
+                    alt="Map and hours card from the To Be Read website's store locator section"
                     loading="lazy"
                   />
                 </div>
